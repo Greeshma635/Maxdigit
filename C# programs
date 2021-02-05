@@ -1,0 +1,23 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+           int num = 56897;
+            int Max = 0;
+            while (num != 0)
+            {
+                int result = num % 10;
+                if (result > Max)
+                {
+                    Max= result;
+                    
+                }
+                
+                num /= 10;
+               
+            }
+
+            Console.WriteLine($"{Max}");
+        }
+    }
+}
