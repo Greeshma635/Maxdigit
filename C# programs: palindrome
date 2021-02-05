@@ -1,0 +1,30 @@
+namespace GreeshmaConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 121;
+            int rev = 0;
+            int temp = num;
+            while (num!=0)
+            {
+                    int result = num % 10;
+                    rev = rev*10+result;
+                    num = num/10;
+                
+            }
+          
+            if(temp == rev) 
+                {
+
+                Console.WriteLine($"Given number is palidrome {rev} : ");
+               }
+
+            else { 
+                Console.WriteLine($"Given number is not a palidrome {rev} : ");
+                 }
+            Console.ReadLine();
+        }
+    }
+}
