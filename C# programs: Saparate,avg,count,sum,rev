@@ -1,0 +1,30 @@
+namespace SaparateConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 123;
+            int avg = 0;
+            int sum = 0;
+            int count = 0;
+            int rev = 0;
+            while (num > 0)
+            {
+                int Digit = num % 10;
+                rev = rev *10+Digit;
+                sum = sum + Digit;
+                count++;
+                num = num / 10;
+                avg = sum / count;
+                Console.WriteLine(Digit);
+            }
+            avg = sum / count;
+            Console.Write($"{avg}\n{count}\n{sum }\n{rev}");
+            Console.WriteLine();
+         
+        
+
+        }
+    }    
+}
