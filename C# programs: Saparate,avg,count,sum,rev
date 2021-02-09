@@ -16,7 +16,7 @@ namespace SaparateConsoleApp3
                 sum = sum + Digit;
                 count++;
                 num = num / 10;
-                avg = sum / count;
+                avg = sum / coun
                 Console.WriteLine(Digit);
             }
             avg = sum / count;
