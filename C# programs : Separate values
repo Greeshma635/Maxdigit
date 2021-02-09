@@ -1,0 +1,23 @@
+namespace SaparateConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int num = 56887;
+
+
+            while (num > 0)
+            {
+               int digit = num %10;
+                
+                num = num / 10;
+                Console.WriteLine(digit);
+
+            }
+           
+           
+        }
+    }    
+}
