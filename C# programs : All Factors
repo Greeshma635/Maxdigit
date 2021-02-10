@@ -1,0 +1,28 @@
+namespace FactConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 12;
+            int sum = 0;
+            int avg = 0;
+            int count = 0;
+            for (int i = 1; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+                    Console.WriteLine(i);
+                    sum = sum + i;
+                    avg = sum / 2;
+                    count++;
+                }
+               
+
+            }
+            Console.WriteLine(sum);
+            Console.WriteLine(avg);
+            Console.WriteLine(count);
+        }
+    }
+}
