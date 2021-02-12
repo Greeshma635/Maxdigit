@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static double CalculatorAge(int month , int year)
+	{
+		double mm=Convert.ToDouble(month);
+		double yy = (Double.Parse(DateTime.Now.ToString("yyyy"))-year);
+		double yyy=yy*12;
+		
+		return (yyy-mm)/12;
+	}
+	
+	public static void Main()
+	{
+		Console.WriteLine(CalculatorAge(11,1995));
+	}
+}
